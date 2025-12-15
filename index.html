@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio — Fayt Pascaline</title>
+
+  <!-- Icônes / polices -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;800&family=Satisfy&display=swap" rel="stylesheet">
+
+  <!-- Ton CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- HEADER - NAVIGATION -->
+    <header>
+      <nav>
+        <a href="#accueil">Accueil</a>
+        <a href="#presentation">Présentation</a>
+        <a href="#project">Projets</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="accueil" aria-label="Bannière principale">
+      <video class="hero-video" autoplay loop muted playsinline>
+        <source src="image/banniere 2.mp4" type="video/mp4">
+      </video>
+
+      <div class="hero-graphics" aria-hidden="true">
+        <div class="blue-rectangle"></div>
+
+        <div class="circle-group-left">
+          <div class="blue-circle small"></div>
+          <div class="circle-outline medium"></div>
+          <div class="blue-circle large"></div>
+        </div>
+
+        <div class="circle-group-right">
+          <div class="blue-circle large-right"></div>
+          <div class="circle-outline-right"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HELLO / PRÉSENTATION -->
+    <section class="hello-section" id="presentation" aria-labelledby="hello-title">
+      <div class="hello-image-container" aria-hidden="true">
+        <img src="image/FOND2-01.png" alt="" class="hello-image">
+      </div>
+
+      <div class="hello-text">
+        <h2 id="hello-title">Hello</h2>
+        <p>Je m'appelle Fayt Pascaline, je suis passionnée de graphisme et d’infographie. À travers ce portfolio, je souhaite partager mes projets, mes réalisations et mon univers créatif.</p>
+        <p>Curieuse et rigoureuse, j'aime relever des défis et explorer de nouvelles idées pour proposer des créations uniques. Je vous invite à découvrir mon travail et en apprendre davantage sur ma démarche et mes inspirations.</p>
+      </div>
+    </section>
+
+    <!-- COMPETENCES -->
+    <section class="competence-section" id="competences" aria-label="Compétences">
+      <h2>Compétences</h2>
+
+      <div class="decorative-circles-competence" aria-hidden="true">
+        <div class="deco-circle blue-solid small-left"></div>
+        <div class="deco-circle blue-outline medium-left"></div>
+        <div class="deco-circle blue-solid large-left"></div>
+
+        <div class="deco-circle blue-solid small-right"></div>
+        <div class="deco-circle blue-outline medium-right"></div>
+        <div class="deco-circle blue-solid large-right"></div>
+      </div>
+
+      <div class="skills-icons">
+        <!-- AE -->
+        <div class="skill-card style-1">
+          <div class="skill-card-inner">
+            <img src="image/aftereffect.jpg" alt="Logo After Effects" class="skill-icon">
+          </div>
+          <svg class="skill-border" preserveAspectRatio="none" viewBox="0 0 108 108" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.84999 4.52304C10.4167 4.87174 12.9833 4.7961 15.55 4.29611C18.1167 3.79612 20.6833 3.77393 23.25 4.22954C25.8167 4.68515 28.3833 4.63313 30.95 4.07349C33.5167 3.51385 36.0833 3.30905 38.65 3.45907C41.2167 3.6091 43.7833 3.64025 46.35 3.55252C48.9167 3.46479 51.4833 3.72872 54.05 4.34432C56.6167 4.95992 59.1833 5.05995 61.75 4.64441C64.3167 4.22888 66.8833 3.95074 69.45 3.81001C72.0167 3.66928 74.5833 3.51867 77.15 3.35817C79.7167 3.19768 82.2833 3.08289 84.85 3.0138C87.4166 2.94472 89.9833 3.10282 92.55 3.48811C95.1167 3.8734 97.5238 4.0717 99.7714 4.08301C102.019 4.09432 103.173 5.38331 103.232 7.94997C103.292 10.5166 103.67 13.0833 104.365 15.65C105.06 18.2166 105.138 20.7833 104.597 23.35C104.057 25.9166 103.853 28.4833 103.984 31.05C104.115 33.6166 103.921 36.1833 103.402 38.75C102.883 41.3166 102.633 43.8833 102.652 46.45C102.671 49.0166 102.93 51.5833 103.427 54.15C103.924 56.7166 104.256 59.2833 104.424 61.85C104.592 64.4166 104.434 66.9833 103.95 69.5499C103.466 72.1166 103.173 74.6833 103.071 77.2499C102.968 79.8166 103.161 82.3833 103.649 84.9499C104.137 87.5166 104.182 90.0833 103.785 92.6499C103.388 95.2166 103.291 97.854 103.494 100.562C103.698 103.27 102.517 104.445 99.95 104.088C97.3834 103.73 94.8167 103.807 92.25 104.318C89.6834 104.83 87.1167 104.777 84.55 104.159C81.9834 103.541 79.4167 103.494 76.8501 104.017C74.2834 104.54 71.7167 104.474 69.1501 103.82C66.5834 103.165 64.0167 102.893 61.4501 103.003C58.8834 103.114 56.3167 103.442 53.7501 103.989C51.1834 104.536 48.6167 104.517 46.0501 103.933C43.4834 103.348 40.9167 103.085 38.3501 103.144C35.7834 103.202 33.2167 103.585 30.65 104.292C28.0834 104.999 25.5167 104.974 22.95 104.217C20.3834 103.46 17.8167 103.267 15.25 103.638C12.6834 104.009 10.049 104.112 7.3471 103.947C4.64516 103.782 3.21816 102.417 3.06612 99.85C2.91407 97.2833 3.27189 94.7166 4.13956 92.15C5.00724 89.5833 5.22889 87.0166 4.80451 84.45C4.38014 81.8833 4.37256 79.3166 4.78179 76.75C5.19101 74.1833 5.23802 71.6166 4.92281 69.0499C4.60759 66.4833 4.31893 63.9166 4.05682 61.3499C3.7947 58.7833 3.76382 56.2166 3.96416 53.6499C4.1645 51.0832 4.12396 48.5166 3.84252 45.9499C3.56109 43.3832 3.70993 40.8166 4.28905 38.2499C4.86817 35.6832 5.17886 33.1165 5.22111 30.5499C5.26336 27.9832 4.95095 25.4165 4.28387 22.8499C3.61679 20.2832 3.15862 17.7165 2.90935 15.1499C2.66007 12.5832 2.77953 10.0832 3.26771 7.64992C3.7559 5.21663 5.28332 4.17434 7.84999 4.52304Z"></path>
+          </svg>
+        </div>
+
+        <!-- PS -->
+        <div class="skill-card style-1">
+          <div class="skill-card-inner">
+            <img src="image/photoshop.jpg" alt="Logo Photoshop" class="skill-icon">
+          </div>
+          <svg class="skill-border" preserveAspectRatio="none" viewBox="0 0 108 108" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.84999 4.52304C10.4167 4.87174 12.9833 4.7961 15.55 4.29611C18.1167 3.79612 20.6833 3.77393 23.25 4.22954C25.8167 4.68515 28.3833 4.63313 30.95 4.07349C33.5167 3.51385 36.0833 3.30905 38.65 3.45907C41.2167 3.6091 43.7833 3.64025 46.35 3.55252C48.9167 3.46479 51.4833 3.72872 54.05 4.34432C56.6167 4.95992 59.1833 5.05995 61.75 4.64441C64.3167 4.22888 66.8833 3.95074 69.45 3.81001C72.0167 3.66928 74.5833 3.51867 77.15 3.35817C79.7167 3.19768 82.2833 3.08289 84.85 3.0138C87.4166 2.94472 89.9833 3.10282 92.55 3.48811C95.1167 3.8734 97.5238 4.0717 99.7714 4.08301C102.019 4.09432 103.173 5.38331 103.232 7.94997C103.292 10.5166 103.67 13.0833 104.365 15.65C105.06 18.2166 105.138 20.7833 104.597 23.35C104.057 25.9166 103.853 28.4833 103.984 31.05C104.115 33.6166 103.921 36.1833 103.402 38.75C102.883 41.3166 102.633 43.8833 102.652 46.45C102.671 49.0166 102.93 51.5833 103.427 54.15C103.924 56.7166 104.256 59.2833 104.424 61.85C104.592 64.4166 104.434 66.9833 103.95 69.5499C103.466 72.1166 103.173 74.6833 103.071 77.2499C102.968 79.8166 103.161 82.3833 103.649 84.9499C104.137 87.5166 104.182 90.0833 103.785 92.6499C103.388 95.2166 103.291 97.854 103.494 100.562C103.698 103.27 102.517 104.445 99.95 104.088C97.3834 103.73 94.8167 103.807 92.25 104.318C89.6834 104.83 87.1167 104.777 84.55 104.159C81.9834 103.541 79.4167 103.494 76.8501 104.017C74.2834 104.54 71.7167 104.474 69.1501 103.82C66.5834 103.165 64.0167 102.893 61.4501 103.003C58.8834 103.114 56.3167 103.442 53.7501 103.989C51.1834 104.536 48.6167 104.517 46.0501 103.933C43.4834 103.348 40.9167 103.085 38.3501 103.144C35.7834 103.202 33.2167 103.585 30.65 104.292C28.0834 104.999 25.5167 104.974 22.95 104.217C20.3834 103.46 17.8167 103.267 15.25 103.638C12.6834 104.009 10.049 104.112 7.3471 103.947C4.64516 103.782 3.21816 102.417 3.06612 99.85C2.91407 97.2833 3.27189 94.7166 4.13956 92.15C5.00724 89.5833 5.22889 87.0166 4.80451 84.45C4.38014 81.8833 4.37256 79.3166 4.78179 76.75C5.19101 74.1833 5.23802 71.6166 4.92281 69.0499C4.60759 66.4833 4.31893 63.9166 4.05682 61.3499C3.7947 58.7833 3.76382 56.2166 3.96416 53.6499C4.1645 51.0832 4.12396 48.5166 3.84252 45.9499C3.56109 43.3832 3.70993 40.8166 4.28905 38.2499C4.86817 35.6832 5.17886 33.1165 5.22111 30.5499C5.26336 27.9832 4.95095 25.4165 4.28387 22.8499C3.61679 20.2832 3.15862 17.7165 2.90935 15.1499C2.66007 12.5832 2.77953 10.0832 3.26771 7.64992C3.7559 5.21663 5.28332 4.17434 7.84999 4.52304Z"></path>
+          </svg>
+        </div>
+
+        <!-- AI -->
+        <div class="skill-card style-1">
+          <div class="skill-card-inner">
+            <img src="image/illustrator.jpg" alt="Logo Illustrator" class="skill-icon">
+          </div>
+          <svg class="skill-border" preserveAspectRatio="none" viewBox="0 0 108 108" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.84999 4.52304C10.4167 4.87174 12.9833 4.7961 15.55 4.29611C18.1167 3.79612 20.6833 3.77393 23.25 4.22954C25.8167 4.68515 28.3833 4.63313 30.95 4.07349C33.5167 3.51385 36.0833 3.30905 38.65 3.45907C41.2167 3.6091 43.7833 3.64025 46.35 3.55252C48.9167 3.46479 51.4833 3.72872 54.05 4.34432C56.6167 4.95992 59.1833 5.05995 61.75 4.64441C64.3167 4.22888 66.8833 3.95074 69.45 3.81001C72.0167 3.66928 74.5833 3.51867 77.15 3.35817C79.7167 3.19768 82.2833 3.08289 84.85 3.0138C87.4166 2.94472 89.9833 3.10282 92.55 3.48811C95.1167 3.8734 97.5238 4.0717 99.7714 4.08301C102.019 4.09432 103.173 5.38331 103.232 7.94997C103.292 10.5166 103.67 13.0833 104.365 15.65C105.06 18.2166 105.138 20.7833 104.597 23.35C104.057 25.9166 103.853 28.4833 103.984 31.05C104.115 33.6166 103.921 36.1833 103.402 38.75C102.883 41.3166 102.633 43.8833 102.652 46.45C102.671 49.0166 102.93 51.5833 103.427 54.15C103.924 56.7166 104.256 59.2833 104.424 61.85C104.592 64.4166 104.434 66.9833 103.95 69.5499C103.466 72.1166 103.173 74.6833 103.071 77.2499C102.968 79.8166 103.161 82.3833 103.649 84.9499C104.137 87.5166 104.182 90.0833 103.785 92.6499C103.388 95.2166 103.291 97.854 103.494 100.562C103.698 103.27 102.517 104.445 99.95 104.088C97.3834 103.73 94.8167 103.807 92.25 104.318C89.6834 104.83 87.1167 104.777 84.55 104.159C81.9834 103.541 79.4167 103.494 76.8501 104.017C74.2834 104.54 71.7167 104.474 69.1501 103.82C66.5834 103.165 64.0167 102.893 61.4501 103.003C58.8834 103.114 56.3167 103.442 53.7501 103.989C51.1834 104.536 48.6167 104.517 46.0501 103.933C43.4834 103.348 40.9167 103.085 38.3501 103.144C35.7834 103.202 33.2167 103.585 30.65 104.292C28.0834 104.999 25.5167 104.974 22.95 104.217C20.3834 103.46 17.8167 103.267 15.25 103.638C12.6834 104.009 10.049 104.112 7.3471 103.947C4.64516 103.782 3.21816 102.417 3.06612 99.85C2.91407 97.2833 3.27189 94.7166 4.13956 92.15C5.00724 89.5833 5.22889 87.0166 4.80451 84.45C4.38014 81.8833 4.37256 79.3166 4.78179 76.75C5.19101 74.1833 5.23802 71.6166 4.92281 69.0499C4.60759 66.4833 4.31893 63.9166 4.05682 61.3499C3.7947 58.7833 3.76382 56.2166 3.96416 53.6499C4.1645 51.0832 4.12396 48.5166 3.84252 45.9499C3.56109 43.3832 3.70993 40.8166 4.28905 38.2499C4.86817 35.6832 5.17886 33.1165 5.22111 30.5499C5.26336 27.9832 4.95095 25.4165 4.28387 22.8499C3.61679 20.2832 3.15862 17.7165 2.90935 15.1499C2.66007 12.5832 2.77953 10.0832 3.26771 7.64992C3.7559 5.21663 5.28332 4.17434 7.84999 4.52304Z"></path>
+          </svg>
+        </div>
+
+        <!-- ID -->
+        <div class="skill-card style-1">
+          <div class="skill-card-inner">
+            <img src="image/Adobe_InDesign_logo.png" alt="Logo InDesign" class="skill-icon">
+          </div>
+          <svg class="skill-border" preserveAspectRatio="none" viewBox="0 0 108 108" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.84999 4.52304C10.4167 4.87174 12.9833 4.7961 15.55 4.29611C18.1167 3.79612 20.6833 3.77393 23.25 4.22954C25.8167 4.68515 28.3833 4.63313 30.95 4.07349C33.5167 3.51385 36.0833 3.30905 38.65 3.45907C41.2167 3.6091 43.7833 3.64025 46.35 3.55252C48.9167 3.46479 51.4833 3.72872 54.05 4.34432C56.6167 4.95992 59.1833 5.05995 61.75 4.64441C64.3167 4.22888 66.8833 3.95074 69.45 3.81001C72.0167 3.66928 74.5833 3.51867 77.15 3.35817C79.7167 3.19768 82.2833 3.08289 84.85 3.0138C87.4166 2.94472 89.9833 3.10282 92.55 3.48811C95.1167 3.8734 97.5238 4.0717 99.7714 4.08301C102.019 4.09432 103.173 5.38331 103.232 7.94997C103.292 10.5166 103.67 13.0833 104.365 15.65C105.06 18.2166 105.138 20.7833 104.597 23.35C104.057 25.9166 103.853 28.4833 103.984 31.05C104.115 33.6166 103.921 36.1833 103.402 38.75C102.883 41.3166 102.633 43.8833 102.652 46.45C102.671 49.0166 102.93 51.5833 103.427 54.15C103.924 56.7166 104.256 59.2833 104.424 61.85C104.592 64.4166 104.434 66.9833 103.95 69.5499C103.466 72.1166 103.173 74.6833 103.071 77.2499C102.968 79.8166 103.161 82.3833 103.649 84.9499C104.137 87.5166 104.182 90.0833 103.785 92.6499C103.388 95.2166 103.291 97.854 103.494 100.562C103.698 103.27 102.517 104.445 99.95 104.088C97.3834 103.73 94.8167 103.807 92.25 104.318C89.6834 104.83 87.1167 104.777 84.55 104.159C81.9834 103.541 79.4167 103.494 76.8501 104.017C74.2834 104.54 71.7167 104.474 69.1501 103.82C66.5834 103.165 64.0167 102.893 61.4501 103.003C58.8834 103.114 56.3167 103.442 53.7501 103.989C51.1834 104.536 48.6167 104.517 46.0501 103.933C43.4834 103.348 40.9167 103.085 38.3501 103.144C35.7834 103.202 33.2167 103.585 30.65 104.292C28.0834 104.999 25.5167 104.974 22.95 104.217C20.3834 103.46 17.8167 103.267 15.25 103.638C12.6834 104.009 10.049 104.112 7.3471 103.947C4.64516 103.782 3.21816 102.417 3.06612 99.85C2.91407 97.2833 3.27189 94.7166 4.13956 92.15C5.00724 89.5833 5.22889 87.0166 4.80451 84.45C4.38014 81.8833 4.37256 79.3166 4.78179 76.75C5.19101 74.1833 5.23802 71.6166 4.92281 69.0499C4.60759 66.4833 4.31893 63.9166 4.05682 61.3499C3.7947 58.7833 3.76382 56.2166 3.96416 53.6499C4.1645 51.0832 4.12396 48.5166 3.84252 45.9499C3.56109 43.3832 3.70993 40.8166 4.28905 38.2499C4.86817 35.6832 5.17886 33.1165 5.22111 30.5499C5.26336 27.9832 4.95095 25.4165 4.28387 22.8499C3.61679 20.2832 3.15862 17.7165 2.90935 15.1499C2.66007 12.5832 2.77953 10.0832 3.26771 7.64992C3.7559 5.21663 5.28332 4.17434 7.84999 4.52304Z"></path>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECT -->
+    <section class="project-section" id="project" aria-label="Projets">
+      <h2>Projets</h2>
+
+      <div class="project-content">
+        <div class="glass-container-unified" role="group" aria-label="Présentation projet vinyle">
+          <div class="project-text">
+            <p>Ce projet présente une édition vinyle moderne de l'album « Teatro d'ira » de Måneskin.</p>
+            <p>Le design mêle contrastes forts (noir, blanc, violet) et formes claires pour refléter l'énergie brute du rock.</p>
+            <p>La pochette, à l'esthétique psychédélique et dynamique, s'accompagne de deux disques vinyles noirs et d'un intérieur graphique listant les titres de l'album.</p>
+            <p>L'ensemble traduit l'intensité théâtrale et visuelle du groupe dans un style à la fois épuré et percutant.</p>
+          </div>
+
+          <div class="project-gallery" aria-label="Galerie d'images du projet">
+            <a href="#img1" class="thumb-link">
+              <img src="image/vinyle53.jpg"  alt="Pochette du vinyle Måneskin vue 1" class="project-thumb">
+            </a>
+            <a href="#img2" class="thumb-link">
+              <img src="image/vinyle2.jpg"   alt="Pochette du vinyle Måneskin vue 2" class="project-thumb">
+            </a>
+            <a href="#img3" class="thumb-link">
+              <img src="image/vinyle532.jpg" alt="Pochette du vinyle Måneskin vue 3" class="project-thumb">
+            </a>
+            <a href="#img4" class="thumb-link">
+              <img src="image/vinyle533.jpg" alt="Pochette du vinyle Måneskin vue 4" class="project-thumb">
+            </a>
+            <a href="#img5" class="thumb-link">
+              <img src="image/vinyle534.jpg" alt="Pochette du vinyle Måneskin vue 5" class="project-thumb">
+            </a>
+            <a href="#img6" class="thumb-link">
+              <img src="image/vinyle1.jpg"   alt="Pochette du vinyle Måneskin vue 6" class="project-thumb">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lightbox -->
+      <a href="#_" class="lightbox" id="img1">
+        <img src="image/vinyle53.jpg"  alt="Pochette du vinyle Måneskin vue 1 en grand">
+      </a>
+      <a href="#_" class="lightbox" id="img2">
+        <img src="image/vinyle2.jpg"   alt="Pochette du vinyle Måneskin vue 2 en grand">
+      </a>
+      <a href="#_" class="lightbox" id="img3">
+        <img src="image/vinyle532.jpg" alt="Pochette du vinyle Måneskin vue 3 en grand">
+      </a>
+      <a href="#_" class="lightbox" id="img4">
+        <img src="image/vinyle533.jpg" alt="Pochette du vinyle Måneskin vue 4 en grand">
+      </a>
+      <a href="#_" class="lightbox" id="img5">
+        <img src="image/vinyle534.jpg" alt="Pochette du vinyle Måneskin vue 5 en grand">
+      </a>
+      <a href="#_" class="lightbox" id="img6">
+        <img src="image/vinyle1.jpg"   alt="Pochette du vinyle Måneskin vue 6 en grand">
+      </a>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact-section" id="contact" aria-label="Contact">
+      <form class="contact-form" aria-label="Formulaire de contact">
+        <h2>Contact</h2>
+
+        <div class="form-group">
+          <label for="name">Nom</label>
+          <input type="text" id="name" name="name" placeholder="Votre nom" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="vous@example.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>
+        </div>
+
+        <button type="submit" class="contact-submit">Envoyer</button>
+      </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-left">
+        <p>© 2025 Fayt Pascaline. Tous droits réservés.</p>
+        <p>Portfolio personnel — Design &amp; Développement.</p>
+      </div>
+
+      <div class="footer-right">
+        <div class="footer-links">
+          <a href="#presentation">À propos</a>
+          <a href="#competences">Compétences</a>
+          <a href="#project">Projets</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-social">
+          <a href="https://github.com/tonprofil" aria-label="GitHub">GH</a>
+          <a href="https://www.linkedin.com/in/tonprofil" aria-label="LinkedIn">IN</a>
+          <a href="https://www.instagram.com/tonprofil" aria-label="Instagram">IG</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Bouton Dark Mode flottant -->
+  <button id="dark-toggle" aria-label="Changer le thème">🌙</button>
+
+  <script>
+    const toggle = document.getElementById('dark-toggle');
+    const body = document.body;
+
+    toggle.addEventListener('click', () => {
+      body.classList.toggle('dark');
+      toggle.textContent = body.classList.contains('dark') ? '☀️' : '🌙';
+    });
+  </script>
+</body>
+</html>
